@@ -12,72 +12,89 @@
 
 <body>
 
+  <!-- header design-->
   <header class="header">
-      <a href="#" class="logo">Mariano.</a>    
+      <a href="#" class="logo">Mariano.<span class="animate" style="--i:1;"></span></a>    
 
-      <div class="bx bx-menu" id="menu-icon"></div>
+      <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
 
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-    </nav>
+
+        <span class="active-nav"></span>
+        <span class="animate" style="--i:2;"></span>
+      </nav>
   </header>
   
   <!--home section desing-->
-  <section class="home" id="home">
+  <section class="home show-animate" id="home">
     <div class="home-content">
-      <h1>Hi, I'm <span> Mariano Wasinger</span></h1>
+      <h1>Hi, I'm <span> Mariano Wasinger</span><span class="animate" style="--i:2;"></span></h1>
       <div class="text-animate">
         <h3>Fullstack Developer</h3>
+        <span class="animate" style="--i:3;"></span>
       </div>
     
-      <p>I am a Fullstack Developer with 3 years of experience in designing and building innovative technology solutions. I specialize in creating efficient web applications using Java, Spring Boot, JavaScript, and MySQL. I thrive in collaborative environments and apply agile methodologies like Scrum to ensure successful project delivery.</p>
+      <p>I am a Fullstack Developer with 3 years of experience in designing and building innovative technology solutions. I specialize in creating efficient web applications using Java, Spring Boot, JavaScript, and MySQL. I thrive in collaborative environments and apply agile methodologies like Scrum to ensure successful project delivery.
+        <span class="animate" style="--i:4;"></span>
+      </p>
 
       <div class="btn-box">
-        <a href="#" class="btn">Hire Me</a>
-        <a href="#" class="btn">Let's talk</a>
+        <a href="#contact" class="btn">Hire Me</a>
+        <span class="animate" style="--i:5;"></span>
       </div>
     </div>
 
     <div class="home-sci">
-      <a href="#"><i class='bx bxl-facebook'></i></a>
-      <a href="#"><i class='bx bxl-twitter'></i></a>
-      <a href="#"><i class='bx bxl-linkedin'></i></a>
+      <a href="#" data-title="GitHub" class="tooltip"><i class='bx bxl-github'></i></a>
+      <a href="#" data-title="LinkedIn" class="tooltip"><i class='bx bxl-linkedin'></i></a>
+      <a href="files/CV-Wasinger-Mariano-2024.pdf" class="btn " download data-title="Download CV" class="tooltip">
+        <i class='bx bx-download'></i>
+      </a>
+      <span class="animate" style="--i:6;"></span>
     </div>
 
-    <div class="home-imgHover"></div>
+    <div class="home-img">
+      <img src="images/home.png" alt="">
+    </div>
+    <span class="animate home-img" style="--i:7;"></span>
   </section>
 
   <!--about section desing-->
   <section class="about" id="about">
-    <h2 class="heading">About <span>Me</span></h2>
+    <h2 class="heading">About <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
 
     <div class="about-img">
       <img src="images/aboutme2.jpg" alt="">
       <span class="circle-spin"></span>
+      <span class="animate scroll" style="--i:2;"></span>
     </div>
 
     <div class="about-content">
-      <h3>Fullstack Developer!</h3>
-      <p>I am a Fullstack Developer with 3 years of experience creating innovative technology solutions. I currently work at Anden Solutions, where I use technologies like Java, Spring Boot, JavaScript, and MySQL to build efficient web applications. I am passionate about continuous learning and process improvement, applying agile methodologies such as Scrum. Additionally, my previous experience as a systems administrator and IT technician has given me a comprehensive understanding of the IT environment.</p>
+      <h3>Fullstack Developer!<span class="animate scroll" style="--i:3;"></span></h3>
+      <p>I am a Fullstack Developer with 3 years of experience creating innovative technology solutions. I currently work at Anden Solutions, where I use technologies like Java, Spring Boot, JavaScript, and MySQL to build efficient web applications. I am passionate about continuous learning and process improvement, applying agile methodologies such as Scrum. Additionally, my previous experience as a systems administrator and IT technician has given me a comprehensive understanding of the IT environment.
+        <span class="animate scroll" style="--i:4;"></span>
+      </p>
 
       <div class="btn-box btns">
         <a href="#" class="btn">Read more</a>
+        <span class="animate scroll" style="--i:5;"></span>
       </div>
     </div>
 </section>
 
 <!--education section desing-->
 <section class="education" id="education">
-  <h2 class="heading">My <span>Journey</span></h2>
+  <h2 class="heading">My <span>Journey</span><span class="animate scroll" style="--i:1;"></span></h2>
 
   <div class="education-row">
     <div class="education-column">
-      <h3 class="title">Education</h3>
+      <h3 class="title">Education<span class="animate scroll" style="--i:2;"></span></h3>
 
       <div class="education-box">
           <div class="education-content">
@@ -103,11 +120,13 @@
               <p>Lorem ipsum dolor sit amet ...</p>
             </div>
           </div>
+
+          <span class="animate scroll" style="--i:3;"></span>
       </div>
     </div>
 
     <div class="education-column">
-      <h3 class="title">Experience</h3>
+      <h3 class="title">Experience<span class="animate scroll" style="--i:5;"></span></h3>
 
       <div class="education-box">
           <div class="education-content">
@@ -133,6 +152,8 @@
               <p>Lorem ipsum dolor sit amet ...</p>
             </div>
           </div>
+
+          <span class="animate scroll" style="--i:6;"></span>
       </div>
     </div>
 
@@ -141,11 +162,11 @@
 
 <!--skills section desing-->
 <section class="skills" id="skills">
-  <h2 class="heading">My <span>Skills</span></h2>
+  <h2 class="heading">My <span>Skills</span><span class="animate scroll" style="--i:1;"></span></h2>
 
   <div class="skills-row">
     <div class="skills-column">
-      <h3 class="title">Coding Skills</h3>
+      <h3 class="title">Coding Skills<span class="animate scroll" style="--i:2;"></span></h3>
 
       <div class="skills-box">
         <div class="skills-content">
@@ -169,11 +190,13 @@
             <div class="bar"><span></span></div>
           </div>
         </div>
+
+        <span class="animate scroll" style="--i:3;"></span>
       </div>
     </div>
 
     <div class="skills-column">
-      <h3 class="title">Professional Skills</h3>
+      <h3 class="title">Professional Skills<span class="animate scroll" style="--i:5;"></span></h3>
 
       <div class="skills-box">
         <div class="skills-content">
@@ -197,15 +220,64 @@
             <div class="bar"><span></span></div>
           </div>
         </div>
+
+        <span class="animate scroll" style="--i:6;"></span>
       </div>
     </div>
 
   </div>
 </section>
 
+<!-- projects section design-->
+<section class="projects" id="projects">
+  <h2 class="heading">My <span>Projects</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+  <div class="projects-container">
+    <!-- Project 1 -->
+    <div class="projects-box"> <!-- Cambié aquí -->
+      <img src="images/my_portfolio_web.png" alt="My portfolio screenshot" class="projects-img">
+      <div class="projects-content">
+        <h3>My portfolio web</h3>
+        <p>A brief description of the project, outlining key features and technologies used.</p>
+        <a href="https://github.com/waltermarianow/project1" class="btn" target="_blank">
+          <i class='bx bxl-github'></i> View on GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="projects-box"> <!-- Cambié aquí -->
+      <img src="images/my_portfolio_web.png" alt="Project 2 Screenshot" class="projects-img">
+      <div class="projects-content">
+        <h3>Project Title 2</h3>
+        <p>A brief description of the project, outlining key features and technologies used.</p>
+        <a href="https://github.com/waltermarianow/project2" class="btn" target="_blank">
+          <i class='bx bxl-github'></i> View on GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="projects-box"> <!-- Cambié aquí -->
+      <img src="images/my_portfolio_web.png" alt="Project 2 Screenshot" class="projects-img">
+      <div class="projects-content">
+        <h3>My third project</h3>
+        <p>A brief description of the project, outlining key features and technologies used.</p>
+        <a href="https://github.com/waltermarianow/project2" class="btn" target="_blank">
+          <i class='bx bxl-github'></i> View on GitHub
+        </a>
+      </div>
+    </div>
+    <!-- Add more project items similarly -->
+
+  </div>
+</section>
+
+
+
 <!-- contact section design-->
  <section class="contact" id="contact">
-  <h2 class="heading">Contact <span>Me!</span></h2>
+  <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i:1;"></span></h2>
 
   <form action="">
     <div class="input-box">
@@ -217,6 +289,8 @@
         <input type="text" placeholder="Email Address" required>
         <span class="focus"></span>
       </div>
+
+      <span class="animate scroll" style="--i:3;"></span>
     </div>
 
     <div class="input-box">
@@ -228,15 +302,21 @@
         <input type="text" placeholder="Email Subject" required>
         <span class="focus"></span>
       </div>
+
+      <span class="animate scroll" style="--i:5;"></span>
     </div>
 
     <div class="textarea-field">
       <textarea name="" id="" cols="30" rows="10" placeholder="Your Mesage" required></textarea>
       <span class="focus"></span>
+
+      <span class="animate scroll" style="--i:7;"></span>
     </div>
 
     <div class="btn-box btns">
       <button type="submit" class="btn">Submit</button>
+
+      <span class="animate scroll" style="--i:9;"></span>
     </div>
   </form>
  </section>
@@ -245,10 +325,14 @@
 <footer class="footer">
   <div class="footer-text">
     <p>&copy; 2024 by Mariano Wasinger.</p>
+
+    <span class="animate scroll" style="--i:1;"></span>
   </div>
 
   <div class="footer-iconTop">
     <a href=""><i class='bx bx-up-arrow-alt'></i></a>
+
+    <span class="animate scroll" style="--i:3;"></span>
   </div>
 </footer>
 
